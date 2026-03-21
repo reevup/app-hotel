@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hôtel Le Grand Palais — Hôtel 5 Étoiles de Luxe | Paris</title>
+  <meta name="description" content="Découvrez l'Hôtel Le Grand Palais, hôtel 5 étoiles au cœur de Paris. Chambres luxueuses, spa, restaurant gastronomique. Réservez votre séjour d'exception dès aujourd'hui." />
+  <meta name="keywords" content="hôtel 5 étoiles Paris, hôtel luxe Paris, suite palace Paris, réservation hôtel Paris, hôtel prestige" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.hotellegrandpalais.fr/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Hôtel Le Grand Palais — 5 Étoiles | Paris" />
+  <meta property="og:description" content="Une expérience hôtelière d'exception au cœur de Paris. Chambres luxueuses, spa, gastronomie raffinée." />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Hotel","name":"Hôtel Le Grand Palais","starRating":{"@type":"Rating","ratingValue":"5"},"address":{"@type":"PostalAddress","streetAddress":"12, Avenue de la Paix","addressLocality":"Paris","postalCode":"75008","addressCountry":"FR"},"telephone":"+33-1-42-00-00-00","priceRange":"€€€€"}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header id="navbar" role="banner">
+    <nav class="nav-container" aria-label="Navigation principale">
+      <a href="#accueil" class="logo" aria-label="Hôtel Le Grand Palais">
+        <div class="logo-ornament" aria-hidden="true">✦</div>
+        <div class="logo-text">
+          <span class="logo-main">LE GRAND PALAIS</span>
+          <span class="logo-sub">H Ô T E L &nbsp; & &nbsp; S P A</span>
+        </div>
+        <div class="logo-ornament" aria-hidden="true">✦</div>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#experience">L'Hôtel</a></li>
+        <li><a href="#chambres">Chambres</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#galerie">Galerie</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#reservation" class="nav-cta">Réserver</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="accueil" class="hero" aria-label="Bienvenue">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-pre" aria-hidden="true">
+        <span class="hero-line"></span>
+        <span class="hero-pre-text">Paris, 8ème Arrondissement</span>
+        <span class="hero-line"></span>
+      </div>
+      <h1 class="hero-title">Le Grand<br/><em>Palais</em></h1>
+      <div class="hero-stars" aria-label="5 étoiles">★★★★★</div>
+      <p class="hero-subtitle">Une parenthèse d'exception au cœur de Paris depuis 1889</p>
+      <div class="hero-actions">
+        <a href="#reservation" class="btn btn-gold">Réserver votre séjour</a>
+        <a href="#chambres" class="btn btn-ghost">Découvrir nos suites</a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator" aria-hidden="true">
+      <span class="scroll-text">Découvrir</span>
+      <span class="scroll-line"></span>
+    </div>
+    <div class="hero-award" aria-label="Palace reconnu">
+      <span class="award-icon">✦</span>
+      <div>
+        <span class="award-title">Palace reconnu</span>
+        <span class="award-sub">Atout France 2024</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK BOOKING -->
+  <div class="quick-book" role="search" aria-label="Recherche rapide">
+    <div class="quick-book-inner">
+      <div class="qb-field">
+        <label for="qb-checkin"><span class="qb-icon">→</span> Arrivée</label>
+        <input type="date" id="qb-checkin" name="checkin" />
+      </div>
+      <div class="qb-sep"></div>
+      <div class="qb-field">
+        <label for="qb-checkout"><span class="qb-icon">←</span> Départ</label>
+        <input type="date" id="qb-checkout" name="checkout" />
+      </div>
+      <div class="qb-sep"></div>
+      <div class="qb-field">
+        <label for="qb-guests">Voyageurs</label>
+        <select id="qb-guests">
+          <option value="1">1 adulte</option>
+          <option value="2" selected>2 adultes</option>
+          <option value="3">3 adultes</option>
+          <option value="4">4 adultes</option>
+        </select>
+      </div>
+      <div class="qb-sep"></div>
+      <div class="qb-field">
+        <label for="qb-room">Chambre</label>
+        <select id="qb-room">
+          <option value="">Toutes catégories</option>
+          <option value="classique">Classique</option>
+          <option value="deluxe">Deluxe</option>
+          <option value="junior">Suite Junior</option>
+          <option value="prestige">Suite Prestige</option>
+          <option value="royale">Suite Royale</option>
+        </select>
+      </div>
+      <button class="btn btn-gold qb-btn" onclick="checkAvailability()">Vérifier disponibilité</button>
+    </div>
+  </div>
+
+  <!-- AVAILABILITY RESULTS -->
+  <div id="availabilityResults" class="avail-panel" hidden>
+    <div class="avail-inner">
+      <button class="avail-close" onclick="closeAvailability()" aria-label="Fermer">✕</button>
+      <div class="avail-header">
+        <h3>Disponibilités</h3>
+        <p id="availDates"></p>
+      </div>
+      <div id="availGrid" class="avail-grid"></div>
+    </div>
+  </div>
+
+  <!-- AWARDS STRIP -->
+  <div class="awards-strip">
+    <div class="awards-inner">
+      <div class="award-item"><span>⭐</span><span>Leading Hotels of the World</span></div>
+      <div class="award-sep">|</div>
+      <div class="award-item"><span>🏆</span><span>Best Luxury Hotel Paris 2024</span></div>
+      <div class="award-sep">|</div>
+      <div class="award-item"><span>🍽️</span><span>2 Étoiles Michelin</span></div>
+      <div class="award-sep">|</div>
+      <div class="award-item"><span>♦️</span><span>Forbes Travel Guide 5 Stars</span></div>
+      <div class="award-sep">|</div>
+      <div class="award-item"><span>🌿</span><span>Green Key Certification</span></div>
+    </div>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section experience">
+    <div class="container">
+      <div class="exp-grid">
+        <div class="exp-images">
+          <div class="exp-img-main" role="img" aria-label="Hall d'entrée de l'hôtel"></div>
+          <div class="exp-img-secondary" role="img" aria-label="Détail architectural de l'hôtel"></div>
+          <div class="exp-badge-float">
+            <span class="exp-badge-year">1889</span>
+            <span class="exp-badge-text">Fondé en</span>
+          </div>
+        </div>
+        <div class="exp-content">
+          <p class="section-eyebrow">Notre Histoire</p>
+          <h2 class="section-title">L'Art de Vivre<br/><em>à la Française</em></h2>
+          <div class="gold-rule"></div>
+          <p class="exp-lead">Depuis 1889, l'Hôtel Le Grand Palais incarne l'élégance parisienne dans toute sa splendeur. Niché au cœur du 8ème arrondissement, notre établissement allie le raffinement de l'architecture haussmannienne aux conforts les plus modernes.</p>
+          <p class="exp-body">Chaque détail de votre séjour a été pensé pour vous offrir une expérience inoubliable. De nos 87 chambres et suites décorées par les plus grands designers français, à notre restaurant doublement étoilé, nous mettons tout en œuvre pour dépasser vos attentes.</p>
+          <div class="exp-stats">
+            <div class="exp-stat"><span class="stat-n">87</span><span class="stat-l">Chambres & Suites</span></div>
+            <div class="exp-stat"><span class="stat-n">2★</span><span class="stat-l">Étoiles Michelin</span></div>
+            <div class="exp-stat"><span class="stat-n">1 200</span><span class="stat-l">m² de Spa</span></div>
+            <div class="exp-stat"><span class="stat-n">24/7</span><span class="stat-l">Conciergerie</span></div>
+          </div>
+          <a href="#chambres" class="btn btn-gold-outline">Découvrir l'hôtel</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section services">
+    <div class="services-bg"></div>
+    <div class="container">
+      <div class="section-header centered">
+        <p class="section-eyebrow light">Nos Prestations</p>
+        <h2 class="section-title light">Une Expérience<br/><em>Sans Égale</em></h2>
+        <div class="gold-rule centered-rule"></div>
+      </div>
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="service-img service-img-restaurant"></div>
+          <div class="service-body">
+            <span class="service-icon" aria-hidden="true">🍽️</span>
+            <h3>Restaurant Gastronomique</h3>
+            <p>Deux étoiles Michelin. Le Chef Marc Rivière sublime les saveurs françaises dans une salle d'une élégance absolue.</p>
+            <a href="#contact" class="service-link">Réserver une table →</a>
+          </div>
+        </article>
+        <article class="service-card service-card-large">
+          <div class="service-img service-img-spa"></div>
+          <div class="service-body">
+            <span class="service-icon" aria-hidden="true">💆</span>
+            <h3>Spa & Bien-être</h3>
+            <p>1 200 m² dédiés à votre relaxation. Hammam, sauna, piscine chauffée et soins exclusifs La Mer.</p>
+            <a href="#reservation" class="service-link">Réserver un soin →</a>
+          </div>
+        </article>
+        <article class="service-card">
+          <div class="service-img service-img-bar"></div>
+          <div class="service-body">
+            <span class="service-icon" aria-hidden="true">🍸</span>
+            <h3>Bar & Lounge</h3>
+            <p>Le Grand Bar, ouvert dès 11h, cocktails signatures et champagnes d'exception dans un écrin Art Déco.</p>
+            <a href="#contact" class="service-link">Réserver →</a>
+          </div>
+        </article>
+        <article class="service-card service-card-large">
+          <div class="service-img service-img-event"></div>
+          <div class="service-body">
+            <span class="service-icon" aria-hidden="true">🎭</span>
+            <h3>Événements Privés</h3>
+            <p>Trois salons modulables pour séminaires, mariages et réceptions privées avec service traiteur sur mesure.</p>
+            <a href="#contact" class="service-link">Nous contacter →</a>
+          </div>
+        </article>
+        <article class="service-card">
+          <div class="service-img service-img-concierge"></div>
+          <div class="service-body">
+            <span class="service-icon" aria-hidden="true">🎩</span>
+            <h3>Conciergerie Privée</h3>
+            <p>Notre équipe de conciergerie est disponible 24h/24 pour organiser chaque moment de votre séjour.</p>
+            <a href="#contact" class="service-link">Nous écrire →</a>
+          </div>
+        </article>
+        <article class="service-card">
+          <div class="service-img service-img-car"></div>
+          <div class="service-body">
+            <span class="service-icon" aria-hidden="true">🚘</span>
+            <h3>Transferts Privés</h3>
+            <p>Rolls-Royce et Mercedes-Benz à disposition. Transfert aéroport et excursions privées.</p>
+            <a href="#contact" class="service-link">Réserver →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROOMS -->
+  <section id="chambres" class="section rooms">
+    <div class="container">
+      <div class="section-header centered">
+        <p class="section-eyebrow">Hébergement</p>
+        <h2 class="section-title">Chambres & <em>Suites</em></h2>
+        <div class="gold-rule centered-rule"></div>
+        <p class="section-lead">Chaque chambre est une œuvre d'art habitée. Découvrez nos hébergements et choisissez votre havre de paix.</p>
+      </div>
+      <div class="rooms-grid" id="roomsGridDynamic">
+        <!-- Rendered dynamically by script.js from localStorage gp_room_details -->
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="galerie" class="section gallery" aria-labelledby="gallery-title">
+    <div class="gallery-header">
+      <p class="section-eyebrow light">Galerie</p>
+      <h2 id="gallery-title" class="section-title light">L'Hôtel en <em>Images</em></h2>
+      <div class="gold-rule centered-rule"></div>
+    </div>
+    <div class="gallery-grid">
+      <div class="gal-item gal-lg" role="img" aria-label="Façade de l'hôtel" onclick="openLightbox(0)" tabindex="0"></div>
+      <div class="gal-item" role="img" aria-label="Piscine intérieure" onclick="openLightbox(1)" tabindex="0"></div>
+      <div class="gal-item" role="img" aria-label="Restaurant gastronomique" onclick="openLightbox(2)" tabindex="0"></div>
+      <div class="gal-item" role="img" aria-label="Suite avec vue Paris" onclick="openLightbox(3)" tabindex="0"></div>
+      <div class="gal-item gal-lg" role="img" aria-label="Spa & Bien-être" onclick="openLightbox(4)" tabindex="0"></div>
+      <div class="gal-item" role="img" aria-label="Bar & Lounge" onclick="openLightbox(5)" tabindex="0"></div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section testimonials" aria-labelledby="testi-title">
+    <div class="container">
+      <div class="section-header centered">
+        <p class="section-eyebrow">Nos Hôtes</p>
+        <h2 id="testi-title" class="section-title">Ils Nous Font <em>Confiance</em></h2>
+        <div class="gold-rule centered-rule"></div>
+      </div>
+      <div class="testi-grid">
+        <blockquote class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p>"Un séjour absolument magique. Le service est irréprochable, chaque détail est pensé avec une précision remarquable. La Suite Prestige avec vue sur la Tour Eiffel était un rêve devenu réalité."</p>
+          <footer><cite>Sophie & Marc L. — Paris</cite></footer>
+        </blockquote>
+        <blockquote class="testi-card testi-featured">
+          <div class="testi-stars">★★★★★</div>
+          <p>"J'ai séjourné dans de nombreux palaces à travers le monde, et Le Grand Palais se distingue par son authenticité française et la chaleur de son équipe. Un établissement absolument d'exception."</p>
+          <footer><cite>James W. — London</cite></footer>
+        </blockquote>
+        <blockquote class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p>"Le restaurant gastronomique m'a laissé sans voix. Chef Rivière est un véritable artiste. Combiné avec le spa somptueux, c'est le voyage parfait pour se ressourcer."</p>
+          <footer><cite>Isabelle D. — Genève</cite></footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESERVATION -->
+  <section id="reservation" class="section reservation-section">
+    <div class="res-bg"></div>
+    <div class="container">
+      <div class="section-header centered">
+        <p class="section-eyebrow light">Votre Séjour</p>
+        <h2 class="section-title light">Réservez Votre <em>Chambre</em></h2>
+        <div class="gold-rule centered-rule"></div>
+        <p class="section-lead light">Remplissez le formulaire ci-dessous et notre équipe vous confirmera votre réservation sous 2 heures.</p>
+      </div>
+      <form class="res-form" id="reservationForm" novalidate>
+        <div class="form-section-title">Vos coordonnées</div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="res-firstname">Prénom <span class="req">*</span></label>
+            <input type="text" id="res-firstname" placeholder="Jean" required autocomplete="given-name" />
+          </div>
+          <div class="form-group">
+            <label for="res-lastname">Nom <span class="req">*</span></label>
+            <input type="text" id="res-lastname" placeholder="Dupont" required autocomplete="family-name" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="res-email">Email <span class="req">*</span></label>
+            <input type="email" id="res-email" placeholder="jean.dupont@email.fr" required autocomplete="email" />
+          </div>
+          <div class="form-group">
+            <label for="res-phone">Téléphone</label>
+            <input type="tel" id="res-phone" placeholder="+33 6 12 34 56 78" autocomplete="tel" />
+          </div>
+        </div>
+
+        <div class="form-section-title">Votre séjour</div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="res-checkin">Date d'arrivée <span class="req">*</span></label>
+            <input type="date" id="res-checkin" required />
+          </div>
+          <div class="form-group">
+            <label for="res-checkout">Date de départ <span class="req">*</span></label>
+            <input type="date" id="res-checkout" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="res-room">Type de chambre <span class="req">*</span></label>
+            <select id="res-room" required>
+              <option value="">— Sélectionner —</option>
+              <option value="classique">Chambre Classique — 450 €/nuit</option>
+              <option value="deluxe">Chambre Deluxe — 650 €/nuit</option>
+              <option value="junior">Suite Junior — 950 €/nuit</option>
+              <option value="prestige">Suite Prestige — 1 800 €/nuit</option>
+              <option value="royale">Suite Royale — 3 500 €/nuit</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="res-guests">Voyageurs <span class="req">*</span></label>
+            <select id="res-guests" required>
+              <option value="1">1 adulte</option>
+              <option value="2" selected>2 adultes</option>
+              <option value="3">3 adultes</option>
+              <option value="4">4 adultes</option>
+              <option value="5">5 adultes</option>
+              <option value="6">6 adultes</option>
+            </select>
+          </div>
+          <div id="upgrade-suggestion-form" class="upgrade-suggestion" hidden></div>
+        </div>
+
+        <div class="form-section-title">Options & suppléments</div>
+        <div class="options-grid">
+          <label class="option-toggle" for="opt-breakfast">
+            <input type="checkbox" id="opt-breakfast" name="breakfast" />
+            <div class="option-card">
+              <span class="option-icon">☕</span>
+              <div class="option-info">
+                <span class="option-name">Petit-déjeuner</span>
+                <span class="option-price">+35 € / pers. / nuit</span>
+              </div>
+              <span class="option-check">✓</span>
+            </div>
+          </label>
+          <label class="option-toggle" for="opt-pets">
+            <input type="checkbox" id="opt-pets" name="pets" />
+            <div class="option-card">
+              <span class="option-icon">🐾</span>
+              <div class="option-info">
+                <span class="option-name">Animaux de compagnie</span>
+                <span class="option-price">+25 € / nuit</span>
+              </div>
+              <span class="option-check">✓</span>
+            </div>
+          </label>
+          <label class="option-toggle" for="opt-transfer">
+            <input type="checkbox" id="opt-transfer" name="transfer" />
+            <div class="option-card">
+              <span class="option-icon">🚘</span>
+              <div class="option-info">
+                <span class="option-name">Transfert aéroport</span>
+                <span class="option-price">+120 € (aller)</span>
+              </div>
+              <span class="option-check">✓</span>
+            </div>
+          </label>
+          <label class="option-toggle" for="opt-latecheckout">
+            <input type="checkbox" id="opt-latecheckout" name="latecheckout" />
+            <div class="option-card">
+              <span class="option-icon">🕐</span>
+              <div class="option-info">
+                <span class="option-name">Late Check-out (16h)</span>
+                <span class="option-price">+50 € / séjour</span>
+              </div>
+              <span class="option-check">✓</span>
+            </div>
+          </label>
+          <label class="option-toggle" for="opt-romantic">
+            <input type="checkbox" id="opt-romantic" name="romantic" />
+            <div class="option-card">
+              <span class="option-icon">🌹</span>
+              <div class="option-info">
+                <span class="option-name">Décoration romantique</span>
+                <span class="option-price">+80 € / séjour</span>
+              </div>
+              <span class="option-check">✓</span>
+            </div>
+          </label>
+          <label class="option-toggle" for="opt-breakfast-bed">
+            <input type="checkbox" id="opt-breakfast-bed" name="breakfastbed" />
+            <div class="option-card">
+              <span class="option-icon">🛏</span>
+              <div class="option-info">
+                <span class="option-name">Petit-déjeuner en chambre</span>
+                <span class="option-price">+25 € / pers. / nuit</span>
+              </div>
+              <span class="option-check">✓</span>
+            </div>
+          </label>
+        </div>
+
+        <div class="form-group" style="margin-top:24px">
+          <label for="res-requests">Demandes spéciales</label>
+          <textarea id="res-requests" rows="4" placeholder="Occasion spéciale, préférences alimentaires, heure d'arrivée estimée, besoins particuliers..."></textarea>
+        </div>
+
+        <div class="form-section-title">Code promotionnel</div>
+        <div class="promo-row">
+          <div class="form-group promo-input-wrap">
+            <label for="res-promo">Code promo</label>
+            <div class="promo-field">
+              <input type="text" id="res-promo" placeholder="Entrez votre code" autocomplete="off" />
+              <button type="button" class="promo-apply-btn" onclick="applyPromoCode()">Appliquer</button>
+            </div>
+          </div>
+          <div id="promoResult" class="promo-result"></div>
+        </div>
+
+        <div class="form-summary" id="formSummary"></div>
+
+        <div class="form-submit-row">
+          <p class="form-legal">En soumettant ce formulaire, vous acceptez notre <a href="#">politique de confidentialité</a>. Aucun montant ne sera débité avant confirmation.</p>
+          <button type="submit" class="btn btn-gold btn-xl">
+            <span>Envoyer ma demande de réservation</span>
+            <span class="btn-arr">→</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section faq-section">
+    <div class="container">
+      <div class="section-header centered">
+        <p class="section-eyebrow">Questions Fréquentes</p>
+        <h2 class="section-title">Tout Savoir sur <em>Votre Séjour</em></h2>
+        <div class="gold-rule centered-rule"></div>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-col">
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+              <span>Quels sont les horaires de check-in et check-out ?</span>
+              <span class="faq-arrow">›</span>
+            </button>
+            <div class="faq-a"><p>Le check-in est disponible à partir de 15h00 et le check-out avant 12h00. Un early check-in (dès 10h00) ou late check-out (jusqu'à 16h00) peut être arrangé moyennant un supplément, sous réserve de disponibilité.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+              <span>Les animaux de compagnie sont-ils acceptés ?</span>
+              <span class="faq-arrow">›</span>
+            </button>
+            <div class="faq-a"><p>Oui, nous accueillons avec plaisir les animaux de compagnie (chiens et chats de moins de 10 kg) moyennant un supplément de 25 € par nuit. Un kit d'accueil spécial leur est préparé avec panier, gamelles et friandises.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+              <span>Quelle est la politique d'annulation ?</span>
+              <span class="faq-arrow">›</span>
+            </button>
+            <div class="faq-a"><p>L'annulation est gratuite jusqu'à 48 heures avant la date d'arrivée. Au-delà, la première nuit sera facturée. Pour les suites Prestige et Royale, le délai d'annulation est de 7 jours. Aucun prépaiement n'est requis lors de la réservation.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+              <span>Proposez-vous un service de voiturier ?</span>
+              <span class="faq-arrow">›</span>
+            </button>
+            <div class="faq-a"><p>Oui, un service de voiturier est disponible 24h/24 devant l'hôtel. Le parking souterrain privé et sécurisé est à 45 € par nuit. Un service de lavage automobile est également proposé sur demande.</p></div>
+          </div>
+        </div>
+        <div class="faq-col">
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+              <span>Le petit-déjeuner est-il inclus dans le tarif ?</span>
+              <span class="faq-arrow">›</span>
+            </button>
+            <div class="faq-a"><p>Le petit-déjeuner n'est pas inclus par défaut mais peut être ajouté lors de la réservation (35 € par personne par nuit). Il est servi au restaurant ou en chambre (supplément de 25 €). Buffet continental et à la carte disponibles de 6h30 à 10h30.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+              <span>Comment rejoindre l'hôtel depuis l'aéroport ?</span>
+              <span class="faq-arrow">›</span>
+            </button>
+            <div class="faq-a"><p>Nous proposons un service de transfert privé en Rolls-Royce ou Mercedes depuis CDG (120 €) et Orly (90 €). Réservez l'option directement lors de votre réservation. Alternativement, l'hôtel est à 5 min à pied du métro ligne 1.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+              <span>Le spa est-il accessible à tous les hôtes ?</span>
+              <span class="faq-arrow">›</span>
+            </button>
+            <div class="faq-a"><p>Le spa est accessible gratuitement pour les clients en Suite Junior et supérieure. Pour les chambres Classique et Deluxe, un accès journalier est disponible à 60 €. Les soins sont sur réservation au +33 1 42 00 00 01.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+              <span>Organisez-vous des événements privés ?</span>
+              <span class="faq-arrow">›</span>
+            </button>
+            <div class="faq-a"><p>Oui, nous disposons de 3 salons modulables de 40 à 200 personnes. Mariages, séminaires, dîners de gala — notre équipe événementielle crée des expériences sur mesure. Demandez un devis à events@legrandpalais.fr.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="section newsletter-section">
+    <div class="newsletter-bg"></div>
+    <div class="container">
+      <div class="newsletter-inner">
+        <div class="newsletter-content">
+          <p class="section-eyebrow light">Newsletter</p>
+          <h2 class="section-title light">Restez <em>Informé</em></h2>
+          <p class="newsletter-text">Recevez nos offres exclusives, invitations aux événements et actualités du Grand Palais directement dans votre boîte mail.</p>
+        </div>
+        <form class="newsletter-form" id="newsletterForm" onsubmit="subscribeNewsletter(event)">
+          <div class="newsletter-field">
+            <input type="email" id="nl-email" placeholder="votre@email.fr" required aria-label="Adresse email" />
+            <button type="submit" class="btn btn-gold">S'inscrire</button>
+          </div>
+          <p class="newsletter-legal">En vous inscrivant, vous acceptez de recevoir nos communications. Désabonnement possible à tout moment.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p class="section-eyebrow">Nous Contacter</p>
+          <h2 class="section-title">À Votre <em>Service</em></h2>
+          <div class="gold-rule"></div>
+          <address>
+            <div class="contact-item">
+              <div class="contact-icon-wrap">📍</div>
+              <div><strong>Adresse</strong><p>12, Avenue de la Paix<br/>75008 Paris, France</p></div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon-wrap">📞</div>
+              <div><strong>Téléphone</strong><p><a href="tel:+33142000000">+33 (0)1 42 00 00 00</a></p></div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon-wrap">✉️</div>
+              <div><strong>Email</strong><p><a href="mailto:reservation@legrandpalais.fr">reservation@legrandpalais.fr</a></p></div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon-wrap">🕐</div>
+              <div><strong>Réception</strong><p>Ouvert 24h/24, 7j/7</p></div>
+            </div>
+          </address>
+        </div>
+        <div class="contact-map-wrap" role="img" aria-label="Localisation de l'hôtel">
+          <div class="contact-map">
+            <div class="map-content">
+              <div class="map-pin">📍</div>
+              <p class="map-addr">12, Avenue de la Paix<br/>Paris 8ème</p>
+              <a href="https://maps.google.com/?q=12+Avenue+de+la+Paix+75008+Paris" target="_blank" rel="noopener noreferrer" class="btn btn-gold-outline">Ouvrir dans Maps</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">LE GRAND PALAIS</div>
+          <div class="footer-stars">★★★★★</div>
+          <p>L'élégance française depuis 1889.<br/>Une adresse iconique au cœur de Paris.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="Facebook">FB</a>
+            <a href="#" aria-label="LinkedIn">LI</a>
+            <a href="#" aria-label="TripAdvisor">TA</a>
+          </div>
+        </div>
+        <nav aria-label="Explorer">
+          <h3>Explorer</h3>
+          <ul>
+            <li><a href="#experience">Notre histoire</a></li>
+            <li><a href="#chambres">Chambres & Suites</a></li>
+            <li><a href="#services">Spa & Wellness</a></li>
+            <li><a href="#services">Restaurant</a></li>
+            <li><a href="#galerie">Galerie photos</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Services">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="#reservation">Réserver</a></li>
+            <li><a href="#contact">Concierge</a></li>
+            <li><a href="#">Offres spéciales</a></li>
+            <li><a href="#">Programme fidélité</a></li>
+            <li><a href="#">Cartes cadeaux</a></li>
+          </ul>
+        </nav>
+        <div class="footer-contact-block">
+          <h3>Contact</h3>
+          <p>12, Avenue de la Paix<br/>75008 Paris, France</p>
+          <p><a href="tel:+33142000000">+33 (0)1 42 00 00 00</a></p>
+          <p><a href="mailto:reservation@legrandpalais.fr">reservation@legrandpalais.fr</a></p>
+          <a href="admin.html" target="_blank" class="admin-link" aria-label="Accès administration">⚙ Administration</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2026 Hôtel Le Grand Palais. Tous droits réservés.</p>
+        <div class="footer-legal-links">
+          <a href="#">Mentions légales</a>
+          <a href="#">Confidentialité</a>
+          <a href="#">CGV</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOOKING MODAL -->
+  <div id="bookingModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal-backdrop" onclick="closeBookingModal()"></div>
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeBookingModal()" aria-label="Fermer">✕</button>
+      <div class="modal-header">
+        <div class="modal-ornament" aria-hidden="true">✦</div>
+        <h2 id="modalTitle">Réservation Rapide</h2>
+        <p id="modalRoomName" class="modal-room-name"></p>
+      </div>
+      <form id="modalForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="m-checkin">Arrivée *</label>
+            <input type="date" id="m-checkin" required />
+          </div>
+          <div class="form-group">
+            <label for="m-checkout">Départ *</label>
+            <input type="date" id="m-checkout" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="m-firstname">Prénom *</label>
+            <input type="text" id="m-firstname" placeholder="Jean" required />
+          </div>
+          <div class="form-group">
+            <label for="m-lastname">Nom *</label>
+            <input type="text" id="m-lastname" placeholder="Dupont" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="m-email">Email *</label>
+          <input type="email" id="m-email" placeholder="jean.dupont@email.fr" required />
+        </div>
+        <div class="form-group">
+          <label for="m-guests">Voyageurs</label>
+          <select id="m-guests">
+            <option value="1">1 adulte</option>
+            <option value="2" selected>2 adultes</option>
+            <option value="3">3 adultes</option>
+            <option value="4">4 adultes</option>
+            <option value="5">5 adultes</option>
+            <option value="6">6 adultes</option>
+          </select>
+        </div>
+        <div id="upgrade-suggestion-modal" class="upgrade-suggestion" hidden></div>
+
+        <div class="modal-options-title">Options</div>
+        <div class="modal-options-grid">
+          <label class="modal-opt" for="mo-breakfast">
+            <input type="checkbox" id="mo-breakfast" />
+            <span>☕ Petit-déjeuner <em>+35€/pers/nuit</em></span>
+          </label>
+          <label class="modal-opt" for="mo-pets">
+            <input type="checkbox" id="mo-pets" />
+            <span>🐾 Animaux <em>+25€/nuit</em></span>
+          </label>
+          <label class="modal-opt" for="mo-transfer">
+            <input type="checkbox" id="mo-transfer" />
+            <span>🚘 Transfert aéroport <em>+120€</em></span>
+          </label>
+          <label class="modal-opt" for="mo-late">
+            <input type="checkbox" id="mo-late" />
+            <span>🕐 Late check-out <em>+50€</em></span>
+          </label>
+          <label class="modal-opt" for="mo-romantic">
+            <input type="checkbox" id="mo-romantic" />
+            <span>🌹 Décoration romantique <em>+80€</em></span>
+          </label>
+          <label class="modal-opt" for="mo-bfbed">
+            <input type="checkbox" id="mo-bfbed" />
+            <span>🛏 Breakfast en chambre <em>+25€/pers/nuit</em></span>
+          </label>
+        </div>
+
+        <div class="modal-price-summary" id="modalPriceSummary"></div>
+        <button type="submit" class="btn btn-gold w-full">Confirmer la Réservation →</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- TOAST -->
+  <div id="successToast" class="toast" role="alert" aria-live="assertive">
+    <div class="toast-icon">✓</div>
+    <div class="toast-body">
+      <strong>Demande envoyée avec succès !</strong>
+      <p>Notre équipe vous contactera sous 2 heures pour confirmer.</p>
+    </div>
+    <button class="toast-close" onclick="hideToast()" aria-label="Fermer">✕</button>
+  </div>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Galerie photo" hidden>
+    <button class="lb-close" onclick="closeLightbox()" aria-label="Fermer">✕</button>
+    <button class="lb-prev" onclick="lbNav(-1)" aria-label="Photo précédente">‹</button>
+    <button class="lb-next" onclick="lbNav(1)" aria-label="Photo suivante">›</button>
+    <div class="lb-img-wrap">
+      <img id="lbImg" src="" alt="Photo de l'hôtel" />
+    </div>
+    <div class="lb-counter" id="lbCounter"></div>
+  </div>
+
+  <!-- ROOM COMPARISON MODAL -->
+  <div id="compareModal" class="compare-modal" role="dialog" aria-modal="true" hidden>
+    <div class="compare-backdrop" onclick="closeCompare()"></div>
+    <div class="compare-box">
+      <button class="modal-close" onclick="closeCompare()" aria-label="Fermer">✕</button>
+      <div class="compare-header">
+        <div class="modal-ornament">✦</div>
+        <h2>Comparer les Chambres</h2>
+        <p>Sélectionnez 2 chambres à comparer</p>
+      </div>
+      <div class="compare-select-row">
+        <select id="cmp-room-1" onchange="updateComparison()">
+          <option value="">— Chambre 1 —</option>
+          <option value="classique">Chambre Classique</option>
+          <option value="deluxe">Chambre Deluxe</option>
+          <option value="junior">Suite Junior</option>
+          <option value="prestige">Suite Prestige</option>
+          <option value="royale">Suite Royale</option>
+        </select>
+        <span class="compare-vs">VS</span>
+        <select id="cmp-room-2" onchange="updateComparison()">
+          <option value="">— Chambre 2 —</option>
+          <option value="classique">Chambre Classique</option>
+          <option value="deluxe">Chambre Deluxe</option>
+          <option value="junior">Suite Junior</option>
+          <option value="prestige">Suite Prestige</option>
+          <option value="royale">Suite Royale</option>
+        </select>
+      </div>
+      <div id="compareResult" class="compare-result"></div>
+    </div>
+  </div>
+
+  <!-- COOKIE BANNER -->
+  <div id="cookieBanner" class="cookie-banner" role="complementary" aria-label="Cookies" hidden>
+    <div class="cookie-inner">
+      <div class="cookie-text">
+        <span class="cookie-icon">🍪</span>
+        <div>
+          <strong>Nous utilisons des cookies</strong>
+          <p>Pour améliorer votre expérience sur notre site, nous utilisons des cookies essentiels et analytiques.</p>
+        </div>
+      </div>
+      <div class="cookie-actions">
+        <button class="btn btn-gold cookie-btn" onclick="acceptCookies('all')">Tout accepter</button>
+        <button class="cookie-btn-minimal" onclick="acceptCookies('essential')">Essentiels uniquement</button>
+        <button class="cookie-btn-minimal" onclick="acceptCookies('reject')">Refuser</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- BACK TO TOP -->
+  <button id="backToTop" class="back-to-top" onclick="scrollToTop()" aria-label="Retour en haut" hidden>
+    <span class="btt-arrow">↑</span>
+    <span class="btt-text">Haut</span>
+  </button>
+
+  <!-- CHAT WIDGET -->
+  <div id="chatWidget" class="chat-widget">
+    <button class="chat-toggle" onclick="toggleChat()" aria-label="Ouvrir le chat concierge" id="chatToggle">
+      <span class="chat-toggle-icon" id="chatToggleIcon">💬</span>
+      <span class="chat-toggle-badge" id="chatBadge" hidden>1</span>
+    </button>
+    <div class="chat-window" id="chatWindow" hidden>
+      <div class="chat-header">
+        <div class="chat-header-info">
+          <div class="chat-avatar">GP</div>
+          <div>
+            <div class="chat-name">Concierge Le Grand Palais</div>
+            <div class="chat-status"><span class="chat-dot"></span> En ligne</div>
+          </div>
+        </div>
+        <button class="chat-header-close" onclick="toggleChat()">✕</button>
+      </div>
+      <div class="chat-messages" id="chatMessages"></div>
+      <div id="chatRating" class="chat-rating" hidden>
+        <p>Comment évaluez-vous cette conversation ?</p>
+        <div class="chat-rating-stars">
+          <button onclick="rateChatService(1)">⭐</button>
+          <button onclick="rateChatService(2)">⭐</button>
+          <button onclick="rateChatService(3)">⭐</button>
+          <button onclick="rateChatService(4)">⭐</button>
+          <button onclick="rateChatService(5)">⭐</button>
+        </div>
+      </div>
+      <div class="chat-suggestions" id="chatSuggestions">
+        <button onclick="chatSend('Quels sont les prix des chambres ?')">💰 Prix des chambres</button>
+        <button onclick="chatSend('Le spa est-il inclus ?')">💆 Spa & Bien-être</button>
+        <button onclick="chatSend('Comment réserver ?')">📋 Réservation</button>
+        <button onclick="chatSend('Quels services proposez-vous ?')">🎩 Services</button>
+        <button onclick="chatSend('Politique d\'annulation ?')">❌ Annulation</button>
+        <button onclick="chatSend('Comment venir à l\'hôtel ?')">🚗 Accès</button>
+      </div>
+      <form class="chat-input-form" onsubmit="chatSubmit(event)">
+        <input type="text" id="chatInput" placeholder="Écrivez votre message…" autocomplete="off" />
+        <button type="submit" class="chat-send-btn" aria-label="Envoyer">→</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- COMPARE FLOATING BUTTON -->
+  <button id="compareBtn" class="compare-float-btn" onclick="openCompare()" aria-label="Comparer les chambres" hidden>
+    <span>⚖️</span>
+    <span class="compare-float-text">Comparer</span>
+  </button>
+
+  <!-- Popup System -->
+  <div id="popupOverlay" class="popup-overlay" hidden>
+    <div class="popup-box" id="popupBox">
+      <div class="popup-icon" id="popupIcon"></div>
+      <h3 class="popup-title" id="popupTitle"></h3>
+      <p class="popup-text" id="popupText"></p>
+      <div class="popup-actions" id="popupActions"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
